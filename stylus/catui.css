@@ -185,7 +185,6 @@ th {
   padding: 0;
 }
 h2 {
-  font-family: "Helvetica Neue", "Helvetica", "WenQuanYi Micro Hei", "Microsoft YaHei", Arial, sans-serif;
   font-size: 1.8rem;
 }
 color cat-white {
@@ -231,9 +230,6 @@ html {
   clear: both;
 }
 .cat-g {
-  letter-spacing: -0.31em;
-  *letter-spacing: normal;
-  *word-spacing: -0.43em;
   text-rendering: optimizespeed;
   font-family: "Helvetica Neue", "Helvetica", "WenQuanYi Micro Hei", "Microsoft YaHei", Arial, sans-serif;
   display: -webkit-flex;
@@ -245,10 +241,6 @@ html {
   -ms-flex-line-pack: start;
   -webkit-align-content: flex-start;
   align-content: flex-start;
-}
-.opera-only:-o-prefocus,
-.cat-g {
-  word-spacing: -0.43em;
 }
 .cat-u-1,
 .cat-u-1-1,
@@ -682,6 +674,38 @@ html {
   .cat-u-xl-12-12 {
     width: 100%;
   }
+}
+.nav {
+  width: 100%;
+  background-color: #5faae8;
+}
+.nav ul,
+.nav li {
+  position: relative;
+  display: inline-block;
+}
+.nav ul {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav li {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: lighter;
+  vertical-align: middle;
+}
+.nav a {
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: lighter;
+}
+.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .cat .button {
   display: inline-block;
