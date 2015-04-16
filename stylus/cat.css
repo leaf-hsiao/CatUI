@@ -677,7 +677,6 @@ html {
 }
 .nav {
   width: 100%;
-  background-color: #5faae8;
 }
 .nav ul,
 .nav li {
@@ -685,15 +684,34 @@ html {
   display: inline-block;
 }
 .nav ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
   list-style: none;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
 }
 .nav li {
   font-size: 1.8rem;
   color: #fff;
   font-weight: lighter;
-  vertical-align: middle;
 }
 .nav a {
   text-decoration: none;
