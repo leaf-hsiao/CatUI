@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CatUI</title>
+    <link rel="stylesheet" href="css\cat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="http://cdn.bootcss.com/highlight.js/8.5/highlight.min.js"></script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css" rel="stylesheet">
+</head>
+
+<body class="cat">
+    <nav class="nav fix right">
+        <ul>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Components</a></li>
+        </ul>
+        <svg style="width:100%;z-index:-1;" class="fix">
+            <path fill="#383838" d="M1366,50c0,0-751.4,0-1085,0c-82.9,0-81.7,30-160,30C83.6,80,0,80,0,80V0h1366V50z"></path>
+            <path fill="#666666" d="M122,82H0v-4h122c38.2,0,56.9-7.1,76.7-14.5C218.8,55.9,239.6,48,282,48h1084v4H282
+            c-41.7,0-62.1,7.7-81.9,15.2C180.9,74.5,161,82,122,82z"></path>
+        </svg>
+        <img src="img/logo.svg" width="150px" class="fix logo">
+    </nav>
+    <div class="main">
+        <h1>Download</h1>
+        <hr>
+        <p>We provided two different forms. You can choose the version depending on your preference and expertise.</p>
+        <div class="cat-g">
+            <div class="cat-u-md-1-2">
+                <div class="card">
+                    <div class="card-head blue">
+                        <h3>CatUI</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Compiled and minified CSS, JavaScript, and fonts are included. You can download it and use it directly in your porject.</p>
+                        <a href="" class="button button-pill button-flat-cyan button-large">CatUI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-u-md-1-2">
+                <div class="card">
+                    <div class="card-head blue">
+                        <h3>Stylus</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Stylus files, JavaScript, and fonts are included. By choosing this version you will need to a Stylus compiler and are required.</p>
+                        <a href="" class="button button-pill button-flat-cyan button-large">Stylus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Setup</h1>
+        <hr>
+        <h2>Project Structure</h2>
+        <pre><code>
+            CatUI/
+              |--css/
+              |  |--cat.css
+              |
+              |--docs/
+              |
+              |--font/
+              |  |--fontawesome/
+              |  |--caticon/
+              |
+              |--js/
+              |
+              |--stylus/
+              |  |--base/
+              |  |--components/
+              |  |--cat.styl
+        </code></pre>
+        <h2>HTML Setup</h2>
+        <pre><code class="html">
+            &lt;!DOCTYPE html>
+            &lt;html lang=zh-cmn-Hans>
+            &lt;head>
+            &lt;meta charset="UTF-8">
+            &lt;title>&lt;/title>
+            &lt;link rel="stylesheet" type="text/css" href="1000.hnu.edu.cn/cat.min.css">
+            &lt;/head>
+            &lt;body class="cat">
+            &lt;!--Add Your code-->
+            &lt;/body>
+            &lt;/html>
+        </code></pre>
+    </div>
+</body>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+
+</html>

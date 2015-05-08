@@ -50,7 +50,7 @@
             opacity 0.8
             background #eee
             border 1px solid #ddd
-            text-shadow 0 1px 1px #fff;
+            text-shadow 0 1px 1px #fff
             color #ccc
             cursor not-allowed
             appearance none
@@ -96,6 +96,8 @@
         border 2px solid #4d4d4d
         .disabled
             box-shadow none
+.button-pill
+    border-radius 50px
 .button-circle
     border-radius 240px
     box-shadow inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2)
@@ -104,3 +106,176 @@
     height 120px
     padding 0px
     border-width 4px
+.button-blue
+    background linear-gradient(to bottom, #39a1f4, #0d8aee)
+    background-color #2196f3
+    border-color #0c7cd5
+    color #fff
+    text-shadow 0 -1px 1px rgba(6, 68, 117, 0.35)
+    &:hover,
+    &:focus
+        background-color #2196f3
+        color #fff
+        background linear-gradient(to bottom, #51adf6, #0d8aee)
+    &:active
+       background #3893dc
+       color #0960a5
+.button-border-blue
+    box-shadow none
+    transition-property all
+    transition-duration 0.3s
+    color #2196f3
+    border 2px solid #2196f3
+    background none
+    text-shadow none
+    &:hover,
+    &:focus
+        background none
+        color #51adf6
+        border 2px solid #51adf6
+    &:active
+        transition-duration 0s
+        background none
+        color #0c7cd5
+        border 2px solid #0c7cd5
+    .disabled
+        box-shadow none
+.button-flat-blue
+    box-shadow none
+    transition-property background
+    transition-duration 0.3s
+    background #2196f3
+    color #fff
+    text-shadow none
+    border none
+    &:hover,
+    &:focus
+        color #fff
+        background #39a1f4
+    &:active
+        transition-duration 0s
+        background #3893dc
+        color #0a6ebd
+    .disabled
+        box-shadow none
+.button-border-blue
+    box-shadow none
+    transition-property all
+    transition-duration 0.3s
+    color #2196f3
+    border 2px solid #2196f3
+    background none
+    text-shadow none
+    &:hover,
+    &:focus
+        background none
+        color #51adf6
+        border 2px solid #51adf6
+    &:active
+        transition-duration 0s
+        background none
+        color #0c7cd5
+        border 2px solid #0c7cd5
+    .disabled
+        box-shadow none
+.button-cyan
+    background linear-gradient(to bottom, #00d3ee, #00a5bb)
+    background-color #00bcd4
+    border-color #008fa1
+    color #fff
+    text-shadow 0 -1px 1px rgba(0, 52, 59, 0.35)
+    &:hover,
+    &:focus
+        background-color #00bcd4
+        color #fff
+        background linear-gradient(to bottom, #08e3ff, #00a5bb)
+    &:active
+       background #15acbf
+       color #00626e
+.button-border-cyan
+    box-shadow none
+    transition-property all
+    transition-duration 0.3s
+    color #00bcd4
+    border 2px solid #00bcd4
+    background none
+    text-shadow none
+    &:hover,
+    &:focus
+        background none
+        color #08e3ff;
+        border 2px solid #08e3ff
+    &:active
+        transition-duration 0s
+        background none
+        color #008fa1
+        border 2px solid #008fa1
+    .disabled
+        box-shadow none
+.button-flat-cyan
+    box-shadow none
+    transition-property background
+    transition-duration 0.3s
+    background #00bcd4
+    color #fff
+    text-shadow none
+    border none
+    &:hover,
+    &:focus
+        color #fff
+        background #00d3ee
+    &:active
+        transition-duration 0s
+        background #15acbf
+        color #007888
+    .disabled
+        box-shadow none
+.button-border-blue
+    box-shadow none
+    transition-property all
+    transition-duration 0.3s
+    color #2196f3
+    border 2px solid #2196f3
+    background none
+    text-shadow none
+    &:hover,
+    &:focus
+        background none
+        color #51adf6
+        border 2px solid #51adf6
+    &:active
+        transition-duration 0s
+        background none
+        color #0c7cd5
+        border 2px solid #0c7cd5
+    .disabled
+        box-shadow none
+.button-jumbo
+    font-size 22px
+    height 51.2px
+    line-height 51.2px
+    padding 0px 40.96px
+.button-large
+    font-size 16px
+    height 38.4px
+    line-height 38.4px
+    padding 0px 30.72px
+    input,
+    button
+        height 40.4px
+.button-small
+    font-size 12px
+    height 25.6px
+    line-height 24px
+    padding 0px 20.48px
+    input,
+    button
+        height 27.6px
+.button-tiny
+    font-size 10px
+    height 22.4px
+    line-height 22.4px
+    padding 0px 19.2px
+    input,
+    button
+        height 24.4px
