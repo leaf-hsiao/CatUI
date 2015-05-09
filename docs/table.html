@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="css\cat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="http://cdn.bootcss.com/highlight.js/8.5/highlight.min.js"></script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css" rel="stylesheet">
+</head>
+
+<body class="cat">
+    <nav class="nav fix right">
+        <ul>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Components</a></li>
+        </ul>
+        <svg style="width:100%;z-index:-1;" class="fix">
+            <path fill="#383838" d="M1366,50c0,0-751.4,0-1085,0c-82.9,0-81.7,30-160,30C83.6,80,0,80,0,80V0h1366V50z"></path>
+            <path fill="#666666" d="M122,82H0v-4h122c38.2,0,56.9-7.1,76.7-14.5C218.8,55.9,239.6,48,282,48h1084v4H282
+            c-41.7,0-62.1,7.7-81.9,15.2C180.9,74.5,161,82,122,82z"></path>
+        </svg>
+        <img src="img/logo.svg" width="150px" class="fix logo">
+    </nav>
+    <div class="main">
+        <h1>Table</h1>
+        <hr>
+        <div class="cat-g">
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
+                <div class="card card-large">
+                    <div class="card-head blue">
+                        <h3>Borderless Table(default)</h3>
+                    </div>
+                    <div class="card-body">
+                    <table>
+                        <thead>
+                            <td>Book</td>
+                            <td>Author</td>
+                            <td>ISBN</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Calculus with Analytic Geometry,2nd ed.</td>
+                                <td>George Simmons</td>
+                                <td>9780070576421</td>
+                            </tr>
+                            <tr>
+                                <td>Introduction to Linear Algebra,4th ed.</td>
+                                <td>Strang</td>
+                                <td>9780980232714</td>
+                            </tr>
+                            <tr>
+                                <td>Supergravity</td>
+                                <td>D. Freedmanand A. VanProeyen</td>
+                                <td>9780521194013</td>
+                            </tr>
+                            <tr>
+                                <td>Etale cohomology</td>
+                                <td>Milne</td>
+                                <td>9780691082387</td>
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
+                <div class="card card-large">
+                    <div class="card-head blue">
+                        <h3>Code</h3>
+                    </div>
+                    <div class="card-body">
+                    <pre><code>
+    &lt;table>
+    &lt;thead>
+        &lt;td>Book&lt;/td>
+        &lt;td>Author&lt;/td>
+        &lt;td>ISBN&lt;/td>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+            &lt;td>Calculus with Analytic Geometry,2nd ed.&lt;/td>
+            &lt;td>George Simmons&lt;/td>
+            &lt;td>9780070576421&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Introduction to Linear Algebra,4th ed.&lt;/td>
+            &lt;td>Strang&lt;/td>
+            &lt;td>9780980232714&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Supergravity&lt;/td>
+            &lt;td>D. Freedmanand A. VanProeyen&lt;/td>
+            &lt;td>9780521194013&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Etale cohomology&lt;/td>
+            &lt;td>Milne&lt;/td>
+            &lt;td>9780691082387&lt;/td>
+        &lt;/tr>
+        
+    &lt;/tbody>
+    &lt;tbody>
+        
+    &lt;/tbody>
+&lt;/table>
+                    </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
+                <div class="card card-large">
+                    <div class="card-head blue">
+                        <h3>Bordered Table</h3>
+                    </div>
+                    <div class="card-body">
+                    <table class="table-bordered">
+                        <thead>
+                            <td>Book</td>
+                            <td>Author</td>
+                            <td>ISBN</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Calculus with Analytic Geometry,2nd ed.</td>
+                                <td>George Simmons</td>
+                                <td>9780070576421</td>
+                            </tr>
+                            <tr>
+                                <td>Introduction to Linear Algebra,4th ed.</td>
+                                <td>Strang</td>
+                                <td>9780980232714</td>
+                            </tr>
+                            <tr>
+                                <td>Supergravity</td>
+                                <td>D. Freedmanand A. VanProeyen</td>
+                                <td>9780521194013</td>
+                            </tr>
+                            <tr>
+                                <td>Etale cohomology</td>
+                                <td>Milne</td>
+                                <td>9780691082387</td>
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
+                <div class="card card-large">
+                    <div class="card-head blue">
+                        <h3>Code</h3>
+                    </div>
+                    <div class="card-body">
+                    <pre><code>
+    &lt;table class="table-bordered">
+    &lt;thead>
+        &lt;td>Book&lt;/td>
+        &lt;td>Author&lt;/td>
+        &lt;td>ISBN&lt;/td>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+            &lt;td>Calculus with Analytic Geometry,2nd ed.&lt;/td>
+            &lt;td>George Simmons&lt;/td>
+            &lt;td>9780070576421&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Introduction to Linear Algebra,4th ed.&lt;/td>
+            &lt;td>Strang&lt;/td>
+            &lt;td>9780980232714&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Supergravity&lt;/td>
+            &lt;td>D. Freedmanand A. VanProeyen&lt;/td>
+            &lt;td>9780521194013&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Etale cohomology&lt;/td>
+            &lt;td>Milne&lt;/td>
+            &lt;td>9780691082387&lt;/td>
+        &lt;/tr>
+        
+    &lt;/tbody>
+    &lt;tbody>
+        
+    &lt;/tbody>
+&lt;/table>
+                    </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+
+</html>
