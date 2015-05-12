@@ -8,20 +8,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="http://cdn.bootcss.com/highlight.js/8.5/highlight.min.js"></script>
     <link href="http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css" rel="stylesheet">
+    <style>
+        #nav233 {
+            height: 48px;
+            width: 100%;
+            background-color: #383838;
+            border-bottom: 4px solid rgb(102, 102, 102);
+
+        }
+        #dn_menu ul {
+            display: none;
+            position: absolute;
+            margin: 0;
+            flex-direction:column;
+            background-color: #383838;
+            -webkit-transition: height 0.5s;
+            -moz-transition: height 0.5s;
+            -ms-transition: height 0.5s;
+            -o-transition: height 0.5s;
+            transition: height 0.5s;
+            height: 0;
+            border: 4px solid rgb(102, 102, 102);
+            border-top: none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #dn_menu:hover ul {
+            display: flex;
+            height: auto;
+            width: 108px;
+        }
+        #dn_menu ul li {
+            margin-left: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 108px;
+            text-align: center;
+        }
+        #dn_menu ul li:hover {
+            background-color: #282828;
+        }
+        .nav > ul > li{
+            line-height: 48px;
+            width: 108px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body class="cat">
     <nav class="nav fix right">
-        <ul>
-            <li><a href="#">Get Started</a></li>
-            <li><a href="#">CSS</a></li>
+        <ul class="bg-black">
+            <li><a href="get-started.html">Get Started</a></li>
+            <li class="dp-toggle">
+                <a href="#">CSS</a>
+                <ul>
+                    <a href="typography.html"><li>typography</li></a>
+                    <a href="table.html"><li>table</li></a>
+                    <a href="button.html"><li>button</li></a>
+                    <a href="form.html"><li>form</li></a>
+                    <a href="grid.html"><li>grid</li></a>
+                </ul>
+            </li>
             <li><a href="#">Components</a></li>
         </ul>
-        <svg style="width:100%;z-index:-1;" class="fix">
-            <path fill="#383838" d="M1366,50c0,0-751.4,0-1085,0c-82.9,0-81.7,30-160,30C83.6,80,0,80,0,80V0h1366V50z"></path>
-            <path fill="#666666" d="M122,82H0v-4h122c38.2,0,56.9-7.1,76.7-14.5C218.8,55.9,239.6,48,282,48h1084v4H282
-            c-41.7,0-62.1,7.7-81.9,15.2C180.9,74.5,161,82,122,82z"></path>
-        </svg>
+        <div class="fix">
+            <svg version="1.1" width="300" height="100" viewBox="0 792 300 100">
+                <path fill="#383838" d="M300,842c0,0,314.6,0-19,0c-82.9,0-81.7,30-160,30c-37.4,0-121,0-121,0v-80h300V842z"></path>
+                <path fill="none" stroke="#666666" stroke-width="4" stroke-miterlimit="10" d="M0,872c0,0,65.5,0,120,0c80,0,80-30,160-30h20"></path>
+            </svg>
+        </div>
         <img src="img/logo.svg" width="150px" class="fix logo">
     </nav>
     <div class="main">
