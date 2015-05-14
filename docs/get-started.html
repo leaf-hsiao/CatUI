@@ -6,54 +6,7 @@
     <title>CatUI</title>
     <link rel="stylesheet" href="css\cat.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <script src="http://cdn.bootcss.com/highlight.js/8.5/highlight.min.js"></script>
-    <link href="http://cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css" rel="stylesheet">
-    <style>
-        #nav233 {
-            height: 48px;
-            width: 100%;
-            background-color: #383838;
-            border-bottom: 4px solid rgb(102, 102, 102);
 
-        }
-        #dn_menu ul {
-            display: none;
-            position: absolute;
-            margin: 0;
-            flex-direction:column;
-            background-color: #383838;
-            -webkit-transition: height 0.5s;
-            -moz-transition: height 0.5s;
-            -ms-transition: height 0.5s;
-            -o-transition: height 0.5s;
-            transition: height 0.5s;
-            height: 0;
-            border: 4px solid rgb(102, 102, 102);
-            border-top: none;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-        #dn_menu:hover ul {
-            display: flex;
-            height: auto;
-            width: 108px;
-        }
-        #dn_menu ul li {
-            margin-left: 0;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            width: 108px;
-            text-align: center;
-        }
-        #dn_menu ul li:hover {
-            background-color: #282828;
-        }
-        .nav > ul > li{
-            line-height: 48px;
-            width: 108px;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body class="cat">
@@ -61,16 +14,22 @@
         <ul class="bg-black">
             <li><a href="get-started.html">Get Started</a></li>
             <li class="dp-toggle">
-                <a href="#">CSS</a>
+                <a href="#">Base CSS</a>
                 <ul>
-                    <a href="typography.html"><li>typography</li></a>
-                    <a href="table.html"><li>table</li></a>
-                    <a href="button.html"><li>button</li></a>
-                    <a href="form.html"><li>form</li></a>
-                    <a href="grid.html"><li>grid</li></a>
+                    <li><a href="typography.html">typography</a></li>
+                    <li><a href="table.html">table</a></li>
+                    <li><a href="button.html">button</a></li>
+                    <li><a href="form.html">form</a></li>
+                    <li><a href="grid.html">grid</a></li>
                 </ul>
             </li>
-            <li><a href="#">Components</a></li>
+            <li class="dp-toggle">
+                <a href="#">Components</a>
+                <ul>
+                    <li><a href="card.html">card</a></li>
+                    <li><a href="navigation.html">navigation</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="fix">
             <svg version="1.1" width="300" height="100" viewBox="0 792 300 100">
@@ -92,7 +51,7 @@
                     </div>
                     <div class="card-body">
                         <p>Compiled and minified CSS, JavaScript, and fonts are included. You can download it and use it directly in your porject.</p>
-                        <a href="" class="button button-pill button-flat-cyan button-large">CatUI</a>
+                        <a href="#" class="button disabled button-pill button-large">CatUI</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +62,7 @@
                     </div>
                     <div class="card-body">
                         <p>Stylus files, JavaScript, and fonts are included. By choosing this version you will need to a Stylus compiler and are required.</p>
-                        <a href="" class="button button-pill button-flat-cyan button-large">Stylus</a>
+                        <a href="src/stylus.zip" class="button button-pill button-flat-cyan button-large">Stylus</a>
                     </div>
                 </div>
             </div>

@@ -779,11 +779,11 @@ html {
   -moz-appearance: none;
   appearance: none;
 }
-.cat .button .disabled:hover,
-.cat .button .disabled:focus,
-.cat .button .disabled:active,
-.cat .button .disabled input,
-.cat .button .disabled button {
+.cat .disabled:hover,
+.cat .disabled:focus,
+.cat .disabled:active,
+.cat .disabled input,
+.cat .disabled button {
   -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
   opacity: 0.8;
@@ -1299,7 +1299,7 @@ html {
 }
 .cat .card .card-body {
   padding: 30px;
-  over-flow: hidden;
+  overflow: hidden;
 }
 .cat .card .blue {
   background-color: #a5c8ef;
@@ -1389,6 +1389,12 @@ html {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.cat .dp-toggle ul li {
+  margin-left: 0;
+}
+.cat .dp-toggle ul li:hover {
+  background-color: #282828;
+}
 .cat .dp-toggle:hover ul {
   display: -webkit-box;
   display: -moz-box;
@@ -1397,14 +1403,6 @@ html {
   display: box;
   display: flex;
   height: auto;
-}
-.cat .dp-toggle li {
-  margin-left: 0;
-  width: 108px;
-  text-align: center;
-}
-.cat .dp-toggle li:hover {
-  background-color: #282828;
 }
 .cat .fix {
   position: fixed;

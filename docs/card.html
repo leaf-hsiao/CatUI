@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Typography</title>
+    <title>Card</title>
     <link rel="stylesheet" href="css\cat.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <script src="http://cdn.bootcss.com/highlight.js/8.5/highlight.min.js"></script>
@@ -11,7 +11,7 @@
 </head>
 
 <body class="cat">
-   <nav class="nav fix right">
+    <nav class="nav fix right">
         <ul class="bg-black">
             <li><a href="get-started.html">Get Started</a></li>
             <li class="dp-toggle">
@@ -41,35 +41,56 @@
         <img src="img/logo.svg" width="150px" class="fix logo">
     </nav>
     <div class="main">
-        <h1>Typography</h1>
+        <h1>Card</h1>
         <hr>
         <div class="cat-g">
-            <div class="cat-u-md-2-3 cent">
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
                 <div class="card card-large">
                     <div class="card-head blue">
-                        <h3>Fonts</h3>
+                        <h3>Card-head</h3>
                     </div>
                     <div class="card-body">
-                        <pre><code>
-    font-default = "Helvetica Neue", "Helvetica", "WenQuanYi Micro Hei", "Microsoft YaHei", Arial,sans-serif
-
-    font-serif = "Garamond", "Georgia", "Times New Roman", serif
-
-    font-mono = Monaco, Menlo, Consolas, "Courier New", monospace
-                        </code></pre>
+                        <div class="card-head blue">blue</div>
+                        <br>
+                        <br>
+                        <div class="card-head green">green</div>
                     </div>
                 </div>
+            </div>
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
                 <div class="card card-large">
                     <div class="card-head blue">
-                        <h3>Headings</h3>
+                        <h3>Code</h3>
                     </div>
                     <div class="card-body">
-                        <h1>h1.</h1>
-                        <h2>h2.</h2>
-                        <h3>h3.</h3>
-                        <h4>h4.</h4>
-                        <h5>h5.</h5>
-                        <h6>h6.</h6>
+                    <pre><code>
+&lt;div class="card-head blue">blue&lt;/div>
+
+&lt;div class="card-head green">green&lt;/div>
+                    </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
+                <div class="card card-large">
+                    <div class="card-head blue">
+                        <h3>Size</h3>
+                    </div>
+                    <div class="card-body">
+                    <h3>small:height 180px<br><br>card-large:height 380px</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-u-sm-u-1 cat-u-md-1-2 cent">
+                <div class="card card-large">
+                    <div class="card-head blue">
+                        <h3>Code</h3>
+                    </div>
+                    <div class="card-body">
+                    <pre><code>
+&lt;div class="card card-small">
+&lt;div class="card card-large">
+                    </code></pre>
                     </div>
                 </div>
             </div>

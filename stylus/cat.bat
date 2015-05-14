@@ -1,1 +1,0 @@
-stylus -u nib --out C:\Users\Leaf\Documents\GitHub\CatUI\docs\css -w .\cat.styl
