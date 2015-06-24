@@ -218,10 +218,12 @@ html {
   font-family: "Helvetica Neue", "Helvetica", "WenQuanYi Micro Hei", "Microsoft YaHei", Arial, sans-serif;
   color: #404040;
   background: #eee;
-  padding-top: 100px;
 }
 .cat .cent {
   text-align: center;
+}
+.cat .main {
+  margin-top: 100px;
 }
 .clearfix {
   zoom: 1;

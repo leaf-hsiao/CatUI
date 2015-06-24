@@ -1,12 +1,35 @@
+.banner 
+    overflow auto
 .banner
-.pic
-    width 100%
-    margin-top 20px
-    overflow hidden
     ul
-    li
-        margin 0
-        padiing 0
+        padding 0
+    li 
         list-style none
-    li
-        height 241px
+    img
+        width 100%
+.banner 
+    ul 
+        li 
+            float left
+    ol
+        margin 0 auto
+        padding 0
+    .dots
+        position relative
+        bottom 70px
+        width 100%
+        margin 0 auto
+        text-align center
+        li
+            display inline-block
+            width 30px
+            height 10px
+            margin 0 4px
+            text-indent -999em
+            border 2px solid #fff
+            cursor pointer
+            opacity .4
+            transition background .5s, opacity .5s
+            &:active
+                background #fff
+                opacity 1
