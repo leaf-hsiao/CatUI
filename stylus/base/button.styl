@@ -60,6 +60,13 @@
     box-shadow inset 0px 1px 3px rgba(0, 0, 0, 0.04)
     padding 10px
     display inline-block
+button-wrap()
+    background linear-gradient(to bottom, #e3e3e3, #f2f2f2)
+    border-radius 200px
+    box-shadow inset 0px 1px 3px rgba(0, 0, 0, 0.04)
+    padding 10px
+    display inline-block
+
 .button-flat
     box-shadow none
     transition-property background
@@ -76,6 +83,14 @@
     color #bbb
     .disabled
         box-shadow none
+
+button-flat()
+    box-shadow none
+    transition-property background
+    transition-duration 0.3s
+    border none
+    text-shadow none
+
 .button-border
     box-shadow none
     transition-property all
@@ -96,8 +111,20 @@
         border 2px solid #4d4d4d
         .disabled
             box-shadow none
+            
+button-border()
+    box-shadow none
+    transition-property all
+    transition-duration 0.3s
+    background none
+    text-shadow none
+
 .button-pill
     border-radius 50px
+    
+button-pill()
+    border-radius 50px
+
 .button-circle
     border-radius 240px
     box-shadow inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2)
@@ -106,6 +133,16 @@
     height 120px
     padding 0px
     border-width 4px
+    
+button-circle()
+    border-radius 240px
+    box-shadow inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2)
+    width 120px
+    line-height 120px
+    height 120px
+    padding 0px
+    border-width 4px
+
 .button-blue
     background linear-gradient(to bottom, #39a1f4, #0d8aee)
     background-color #2196f3
@@ -121,13 +158,9 @@
        background #3893dc
        color #0960a5
 .button-border-blue
-    box-shadow none
-    transition-property all
-    transition-duration 0.3s
+    button-border()
     color #2196f3
     border 2px solid #2196f3
-    background none
-    text-shadow none
     &:hover,
     &:focus
         background none
@@ -141,13 +174,9 @@
     .disabled
         box-shadow none
 .button-flat-blue
-    box-shadow none
-    transition-property background
-    transition-duration 0.3s
+    button-flat()
     background #2196f3
     color #fff
-    text-shadow none
-    border none
     &:hover,
     &:focus
         color #fff
@@ -156,26 +185,6 @@
         transition-duration 0s
         background #3893dc
         color #0a6ebd
-    .disabled
-        box-shadow none
-.button-border-blue
-    box-shadow none
-    transition-property all
-    transition-duration 0.3s
-    color #2196f3
-    border 2px solid #2196f3
-    background none
-    text-shadow none
-    &:hover,
-    &:focus
-        background none
-        color #51adf6
-        border 2px solid #51adf6
-    &:active
-        transition-duration 0s
-        background none
-        color #0c7cd5
-        border 2px solid #0c7cd5
     .disabled
         box-shadow none
 .button-cyan
@@ -193,13 +202,9 @@
        background #15acbf
        color #00626e
 .button-border-cyan
-    box-shadow none
-    transition-property all
-    transition-duration 0.3s
+    button-border()
     color #00bcd4
     border 2px solid #00bcd4
-    background none
-    text-shadow none
     &:hover,
     &:focus
         background none
@@ -213,13 +218,9 @@
     .disabled
         box-shadow none
 .button-flat-cyan
-    box-shadow none
-    transition-property background
-    transition-duration 0.3s
+    button-flat()
     background #00bcd4
     color #fff
-    text-shadow none
-    border none
     &:hover,
     &:focus
         color #fff
@@ -230,26 +231,7 @@
         color #007888
     .disabled
         box-shadow none
-.button-border-blue
-    box-shadow none
-    transition-property all
-    transition-duration 0.3s
-    color #2196f3
-    border 2px solid #2196f3
-    background none
-    text-shadow none
-    &:hover,
-    &:focus
-        background none
-        color #51adf6
-        border 2px solid #51adf6
-    &:active
-        transition-duration 0s
-        background none
-        color #0c7cd5
-        border 2px solid #0c7cd5
-    .disabled
-        box-shadow none
+    
 .button-jumbo
     font-size 22px
     height 51.2px
