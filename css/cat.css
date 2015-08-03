@@ -1748,7 +1748,7 @@ html {
 .cat code {
   max-height: 250px;
 }
-.cat .button {
+.cat .btn {
   display: inline-block;
   zoom: 1;
   line-height: normal;
@@ -1774,32 +1774,33 @@ html {
   margin: 0;
   text-shadow: 0 1px 1px #fff;
 }
-.cat .button:hover,
-.cat .button:focus,
-.cat .button:active {
+.cat .btn:hover,
+.cat .btn:focus,
+.cat .btn:active {
   text-decoration: none;
 }
-.cat .button:hover,
-.cat .button:focus {
+.cat .btn:hover,
+.cat .btn:focus {
   color: #666;
+  background-color: #eee;
   background: -webkit-linear-gradient(top, #fff, #dcdcdc);
   background: -moz-linear-gradient(top, #fff, #dcdcdc);
   background: -o-linear-gradient(top, #fff, #dcdcdc);
   background: -ms-linear-gradient(top, #fff, #dcdcdc);
   background: linear-gradient(to bottom, #fff, #dcdcdc);
 }
-.cat .button:active {
+.cat .btn:active {
   -webkit-box-shadow: inset 0px 1px 3px rgba(0,0,0,0.3), 0px 1px 0px #fff;
   box-shadow: inset 0px 1px 3px rgba(0,0,0,0.3), 0px 1px 0px #fff;
   text-shadow: 0px 1px 0px rgba(255,255,255,0.4);
   background: #eee;
   color: #bbb;
 }
-.cat .button:focus {
+.cat .btn:focus {
   outline: none;
 }
-.cat .button input,
-.cat .button button {
+.cat .btn input,
+.cat .btn btn {
   height: 34px;
   cursor: pointer;
   -webkit-appearance: none;
@@ -1810,7 +1811,7 @@ html {
 .cat .disabled:focus,
 .cat .disabled:active,
 .cat .disabled input,
-.cat .disabled button {
+.cat .disabled btn {
   -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
   opacity: 0.8;
@@ -1825,7 +1826,7 @@ html {
   -moz-appearance: none;
   appearance: none;
 }
-.cat .button-wrap {
+.cat .btn-wrap {
   background: -webkit-linear-gradient(top, #e3e3e3, #f2f2f2);
   background: -moz-linear-gradient(top, #e3e3e3, #f2f2f2);
   background: -o-linear-gradient(top, #e3e3e3, #f2f2f2);
@@ -1838,7 +1839,7 @@ html {
   padding: 10px;
   display: inline-block;
 }
-.cat .button-flat {
+.cat .btn-flat {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition-property: background;
@@ -1852,22 +1853,29 @@ html {
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
   background: #eee;
-  border: none;
+  color: #fff;
   text-shadow: none;
+  border: none;
 }
-.cat .button-flat:hover,
-.cat .button-flat:focus {
+.cat .btn-flat:hover,
+.cat .btn-flat:focus {
   background: #fbfbfb;
+  color: #fff;
 }
-.cat .button-flat:active,
-.cat .button-flat transition-duration 0s,
-.cat .button-flat background #eee,
-.cat .button-flat color #bbb,
-.cat .button-flat .disabled {
+.cat .btn-flat:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s;
+  background: #eee;
+  color: #bbb;
+}
+.cat .btn-flat .disabled {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cat .button-border {
+.cat .btn-border {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition-property: all;
@@ -1885,13 +1893,13 @@ html {
   background: none;
   text-shadow: none;
 }
-.cat .button-border:hover,
-.cat .button-border:focus {
+.cat .btn-border:hover,
+.cat .btn-border:focus {
   background: none;
   color: #808080;
   border: 2px solid #808080;
 }
-.cat .button-border:active {
+.cat .btn-border:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
   -o-transition-duration: 0s;
@@ -1901,15 +1909,15 @@ html {
   color: #4d4d4d;
   border: 2px solid #4d4d4d;
 }
-.cat .button-border:active .disabled {
+.cat .btn-border:active .disabled {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cat .button-pill {
+.cat .btn-pill {
   -webkit-border-radius: 50px;
   border-radius: 50px;
 }
-.cat .button-circle {
+.cat .btn-circle {
   -webkit-border-radius: 240px;
   border-radius: 240px;
   -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255,0.5), 0px 1px 2px rgba(0,0,0,0.2);
@@ -1920,7 +1928,7 @@ html {
   padding: 0px;
   border-width: 4px;
 }
-.cat .button-blue {
+.cat .btn-blue {
   background: -webkit-linear-gradient(top, #39a1f4, #0d8aee);
   background: -moz-linear-gradient(top, #39a1f4, #0d8aee);
   background: -o-linear-gradient(top, #39a1f4, #0d8aee);
@@ -1931,8 +1939,8 @@ html {
   color: #fff;
   text-shadow: 0 -1px 1px rgba(6,68,117,0.35);
 }
-.cat .button-blue:hover,
-.cat .button-blue:focus {
+.cat .btn-blue:hover,
+.cat .btn-blue:focus {
   background-color: #2196f3;
   color: #fff;
   background: -webkit-linear-gradient(top, #51adf6, #0d8aee);
@@ -1941,49 +1949,11 @@ html {
   background: -ms-linear-gradient(top, #51adf6, #0d8aee);
   background: linear-gradient(to bottom, #51adf6, #0d8aee);
 }
-.cat .button-blue:active {
+.cat .btn-blue:active {
   background: #3893dc;
   color: #0960a5;
 }
-.cat .button-border-blue {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -ms-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  color: #2196f3;
-  border: 2px solid #2196f3;
-  background: none;
-  text-shadow: none;
-}
-.cat .button-border-blue:hover,
-.cat .button-border-blue:focus {
-  background: none;
-  color: #51adf6;
-  border: 2px solid #51adf6;
-}
-.cat .button-border-blue:active {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  transition-duration: 0s;
-  background: none;
-  color: #0c7cd5;
-  border: 2px solid #0c7cd5;
-}
-.cat .button-border-blue .disabled {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.cat .button-flat-blue {
+.cat .btn-flat-blue {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition-property: background;
@@ -2001,12 +1971,12 @@ html {
   text-shadow: none;
   border: none;
 }
-.cat .button-flat-blue:hover,
-.cat .button-flat-blue:focus {
-  color: #fff;
+.cat .btn-flat-blue:hover,
+.cat .btn-flat-blue:focus {
   background: #39a1f4;
+  color: #fff;
 }
-.cat .button-flat-blue:active {
+.cat .btn-flat-blue:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
   -o-transition-duration: 0s;
@@ -2015,11 +1985,11 @@ html {
   background: #3893dc;
   color: #0a6ebd;
 }
-.cat .button-flat-blue .disabled {
+.cat .btn-flat-blue .disabled {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cat .button-border-blue {
+.cat .btn-border-blue {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition-property: all;
@@ -2037,13 +2007,13 @@ html {
   background: none;
   text-shadow: none;
 }
-.cat .button-border-blue:hover,
-.cat .button-border-blue:focus {
+.cat .btn-border-blue:hover,
+.cat .btn-border-blue:focus {
   background: none;
   color: #51adf6;
   border: 2px solid #51adf6;
 }
-.cat .button-border-blue:active {
+.cat .btn-border-blue:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
   -o-transition-duration: 0s;
@@ -2053,11 +2023,11 @@ html {
   color: #0c7cd5;
   border: 2px solid #0c7cd5;
 }
-.cat .button-border-blue .disabled {
+.cat .btn-border-blue:active .disabled {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cat .button-cyan {
+.cat .btn-cyan {
   background: -webkit-linear-gradient(top, #00d3ee, #00a5bb);
   background: -moz-linear-gradient(top, #00d3ee, #00a5bb);
   background: -o-linear-gradient(top, #00d3ee, #00a5bb);
@@ -2068,8 +2038,8 @@ html {
   color: #fff;
   text-shadow: 0 -1px 1px rgba(0,52,59,0.35);
 }
-.cat .button-cyan:hover,
-.cat .button-cyan:focus {
+.cat .btn-cyan:hover,
+.cat .btn-cyan:focus {
   background-color: #00bcd4;
   color: #fff;
   background: -webkit-linear-gradient(top, #08e3ff, #00a5bb);
@@ -2078,49 +2048,11 @@ html {
   background: -ms-linear-gradient(top, #08e3ff, #00a5bb);
   background: linear-gradient(to bottom, #08e3ff, #00a5bb);
 }
-.cat .button-cyan:active {
+.cat .btn-cyan:active {
   background: #15acbf;
   color: #00626e;
 }
-.cat .button-border-cyan {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -ms-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  color: #00bcd4;
-  border: 2px solid #00bcd4;
-  background: none;
-  text-shadow: none;
-}
-.cat .button-border-cyan:hover,
-.cat .button-border-cyan:focus {
-  background: none;
-  color: #08e3ff;
-  border: 2px solid #08e3ff;
-}
-.cat .button-border-cyan:active {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  transition-duration: 0s;
-  background: none;
-  color: #008fa1;
-  border: 2px solid #008fa1;
-}
-.cat .button-border-cyan .disabled {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.cat .button-flat-cyan {
+.cat .btn-flat-cyan {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition-property: background;
@@ -2138,12 +2070,12 @@ html {
   text-shadow: none;
   border: none;
 }
-.cat .button-flat-cyan:hover,
-.cat .button-flat-cyan:focus {
-  color: #fff;
+.cat .btn-flat-cyan:hover,
+.cat .btn-flat-cyan:focus {
   background: #00d3ee;
+  color: #fff;
 }
-.cat .button-flat-cyan:active {
+.cat .btn-flat-cyan:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
   -o-transition-duration: 0s;
@@ -2152,11 +2084,11 @@ html {
   background: #15acbf;
   color: #007888;
 }
-.cat .button-flat-cyan .disabled {
+.cat .btn-flat-cyan .disabled {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cat .button-border-blue {
+.cat .btn-border-cyan {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition-property: all;
@@ -2169,65 +2101,362 @@ html {
   -o-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  color: #2196f3;
-  border: 2px solid #2196f3;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
   background: none;
   text-shadow: none;
 }
-.cat .button-border-blue:hover,
-.cat .button-border-blue:focus {
+.cat .btn-border-cyan:hover,
+.cat .btn-border-cyan:focus {
   background: none;
-  color: #51adf6;
-  border: 2px solid #51adf6;
+  color: #08e3ff;
+  border: 2px solid #08e3ff;
 }
-.cat .button-border-blue:active {
+.cat .btn-border-cyan:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
   -o-transition-duration: 0s;
   -ms-transition-duration: 0s;
   transition-duration: 0s;
   background: none;
-  color: #0c7cd5;
-  border: 2px solid #0c7cd5;
+  color: #008fa1;
+  border: 2px solid #008fa1;
 }
-.cat .button-border-blue .disabled {
+.cat .btn-border-cyan:active .disabled {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.cat .button-jumbo {
+.cat .btn-amber {
+  background: -webkit-linear-gradient(top, #ffc721, #ecb100);
+  background: -moz-linear-gradient(top, #ffc721, #ecb100);
+  background: -o-linear-gradient(top, #ffc721, #ecb100);
+  background: -ms-linear-gradient(top, #ffc721, #ecb100);
+  background: linear-gradient(to bottom, #ffc721, #ecb100);
+  background-color: #ffc107;
+  border-color: #d39e00;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(109,82,0,0.35);
+}
+.cat .btn-amber:hover,
+.cat .btn-amber:focus {
+  background-color: #ffc107;
+  color: #fff;
+  background: -webkit-linear-gradient(top, #ffce3a, #ecb100);
+  background: -moz-linear-gradient(top, #ffce3a, #ecb100);
+  background: -o-linear-gradient(top, #ffce3a, #ecb100);
+  background: -ms-linear-gradient(top, #ffce3a, #ecb100);
+  background: linear-gradient(to bottom, #ffce3a, #ecb100);
+}
+.cat .btn-amber:active {
+  background: #e6b520;
+  color: #a07800;
+}
+.cat .btn-flat-amber {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -ms-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #ffc107;
+  color: #fff;
+  text-shadow: none;
+  border: none;
+}
+.cat .btn-flat-amber:hover,
+.cat .btn-flat-amber:focus {
+  background: #ffc721;
+  color: #fff;
+}
+.cat .btn-flat-amber:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s;
+  background: #e6b520;
+  color: #b98b00;
+}
+.cat .btn-flat-amber .disabled {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cat .btn-border-amber {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #ffc107;
+  border: 2px solid #ffc107;
+  background: none;
+  text-shadow: none;
+}
+.cat .btn-border-amber:hover,
+.cat .btn-border-amber:focus {
+  background: none;
+  color: #ffce3a;
+  border: 2px solid #ffce3a;
+}
+.cat .btn-border-amber:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s;
+  background: none;
+  color: #d39e00;
+  border: 2px solid #d39e00;
+}
+.cat .btn-border-amber:active .disabled {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cat .btn-green {
+  background: -webkit-linear-gradient(top, #5cb860, #449d48);
+  background: -moz-linear-gradient(top, #5cb860, #449d48);
+  background: -o-linear-gradient(top, #5cb860, #449d48);
+  background: -ms-linear-gradient(top, #5cb860, #449d48);
+  background: linear-gradient(to bottom, #5cb860, #449d48);
+  background-color: #4caf50;
+  border-color: #3d8b40;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(30,68,31,0.35);
+}
+.cat .btn-green:hover,
+.cat .btn-green:focus {
+  background-color: #4caf50;
+  color: #fff;
+  background: -webkit-linear-gradient(top, #6ec071, #449d48);
+  background: -moz-linear-gradient(top, #6ec071, #449d48);
+  background: -o-linear-gradient(top, #6ec071, #449d48);
+  background: -ms-linear-gradient(top, #6ec071, #449d48);
+  background: linear-gradient(to bottom, #6ec071, #449d48);
+}
+.cat .btn-green:active {
+  background: #659667;
+  color: #2d682f;
+}
+.cat .btn-flat-green {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -ms-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #4caf50;
+  color: #fff;
+  text-shadow: none;
+  border: none;
+}
+.cat .btn-flat-green:hover,
+.cat .btn-flat-green:focus {
+  background: #5cb860;
+  color: #fff;
+}
+.cat .btn-flat-green:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s;
+  background: #659667;
+  color: #357a38;
+}
+.cat .btn-flat-green .disabled {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cat .btn-border-green {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+  background: none;
+  text-shadow: none;
+}
+.cat .btn-border-green:hover,
+.cat .btn-border-green:focus {
+  background: none;
+  color: #6ec071;
+  border: 2px solid #6ec071;
+}
+.cat .btn-border-green:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s;
+  background: none;
+  color: #3d8b40;
+  border: 2px solid #3d8b40;
+}
+.cat .btn-border-green:active .disabled {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cat .btn-grey {
+  background: -webkit-linear-gradient(top, #ababab, #919191);
+  background: -moz-linear-gradient(top, #ababab, #919191);
+  background: -o-linear-gradient(top, #ababab, #919191);
+  background: -ms-linear-gradient(top, #ababab, #919191);
+  background: linear-gradient(to bottom, #ababab, #919191);
+  background-color: #9e9e9e;
+  border-color: #858585;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(82,82,82,0.35);
+}
+.cat .btn-grey:hover,
+.cat .btn-grey:focus {
+  background-color: #9e9e9e;
+  color: #fff;
+  background: -webkit-linear-gradient(top, #b8b8b8, #919191);
+  background: -moz-linear-gradient(top, #b8b8b8, #919191);
+  background: -o-linear-gradient(top, #b8b8b8, #919191);
+  background: -ms-linear-gradient(top, #b8b8b8, #919191);
+  background: linear-gradient(to bottom, #b8b8b8, #919191);
+}
+.cat .btn-grey:active {
+  background: #9e9e9e;
+  color: #6b6b6b;
+}
+.cat .btn-flat-grey {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -ms-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #9e9e9e;
+  color: #fff;
+  text-shadow: none;
+  border: none;
+}
+.cat .btn-flat-grey:hover,
+.cat .btn-flat-grey:focus {
+  background: #ababab;
+  color: #fff;
+}
+.cat .btn-flat-grey:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s;
+  background: #9e9e9e;
+  color: #787878;
+}
+.cat .btn-flat-grey .disabled {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cat .btn-border-grey {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #9e9e9e;
+  border: 2px solid #9e9e9e;
+  background: none;
+  text-shadow: none;
+}
+.cat .btn-border-grey:hover,
+.cat .btn-border-grey:focus {
+  background: none;
+  color: #b8b8b8;
+  border: 2px solid #b8b8b8;
+}
+.cat .btn-border-grey:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s;
+  background: none;
+  color: #858585;
+  border: 2px solid #858585;
+}
+.cat .btn-border-grey:active .disabled {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.cat .btn-jumbo {
   font-size: 22px;
   height: 51.2px;
   line-height: 51.2px;
   padding: 0px 40.96px;
 }
-.cat .button-large {
+.cat .btn-large {
   font-size: 16px;
   height: 38.4px;
   line-height: 38.4px;
   padding: 0px 30.72px;
 }
-.cat .button-large input,
-.cat .button-large button {
+.cat .btn-large input,
+.cat .btn-large btn {
   height: 40.4px;
 }
-.cat .button-small {
+.cat .btn-small {
   font-size: 12px;
   height: 25.6px;
   line-height: 24px;
   padding: 0px 20.48px;
 }
-.cat .button-small input,
-.cat .button-small button {
+.cat .btn-small input,
+.cat .btn-small btn {
   height: 27.6px;
 }
-.cat .button-tiny {
+.cat .btn-tiny {
   font-size: 10px;
   height: 22.4px;
   line-height: 22.4px;
   padding: 0px 19.2px;
 }
-.cat .button-tiny input,
-.cat .button-tiny button {
+.cat .btn-tiny input,
+.cat .btn-tiny btn {
   height: 24.4px;
 }
 .cat table {

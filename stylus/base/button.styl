@@ -1,4 +1,4 @@
-.button
+.btn
     display inline-block
     zoom 1
     line-height normal
@@ -18,14 +18,14 @@
     color #666
     margin 0
     text-shadow 0 1px 1px white
-    &:hover,
-    &:focus,
-    &:active,
+    &:hover
+    &:focus
     &:active
         text-decoration none
-    &:hover,
+    &:hover
     &:focus
         color #666
+        background-color #eee
         background linear-gradient(to bottom, #fff, #dcdcdc)
     &:active
         box-shadow inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white
@@ -34,18 +34,18 @@
         color #bbb
     &:focus
         outline none
-    input,
-    button
+    input
+    btn
         height 34px
         cursor pointer
         appearance none
-.disabled,
 .disabled
-    &:hover,
-    &:focus,
-    &:active,
-    input,
-    button
+.disabled
+    &:hover
+    &:focus
+    &:active
+    input
+    btn
         box-shadow 0px 1px 2px rgba(0, 0, 0, 0.1)
         opacity 0.8
         background #eee
@@ -54,87 +54,63 @@
         color #ccc
         cursor not-allowed
         appearance none
-.button-wrap
-    background linear-gradient(to bottom, #e3e3e3, #f2f2f2)
-    border-radius 200px
-    box-shadow inset 0px 1px 3px rgba(0, 0, 0, 0.04)
-    padding 10px
-    display inline-block
-button-wrap()
+.btn-wrap
     background linear-gradient(to bottom, #e3e3e3, #f2f2f2)
     border-radius 200px
     box-shadow inset 0px 1px 3px rgba(0, 0, 0, 0.04)
     padding 10px
     display inline-block
 
-.button-flat
+btn-flat(bg-c = #eee, c = #fff, f-bg-c = #fbfbfb, f-c =#fff, a-bg-c = #eee, a-c = #bbb)
     box-shadow none
     transition-property background
     transition-duration 0.3s
-    background #eee
-    border none
+    background bg-c
+    color c
     text-shadow none
-    &:hover,
+    border none
+    &:hover
     &:focus
-        background #fbfbfb
-    &:active,
-    transition-duration 0s
-    background #eee
-    color #bbb
+        background f-bg-c
+        color f-c
+    &:active
+        transition-duration 0s
+        background a-bg-c
+        color a-c
     .disabled
         box-shadow none
 
-button-flat()
-    box-shadow none
-    transition-property background
-    transition-duration 0.3s
-    border none
-    text-shadow none
-
-.button-border
+.btn-flat
+    btn-flat()
+    
+btn-border(c = #666, f-c = gray, a-c = #4d4d4d)
     box-shadow none
     transition-property all
     transition-duration 0.3s
-    color #666
-    border 2px solid #666
+    color c
+    border 2px solid c
     background none
     text-shadow none
-    &:hover,
+    &:hover
     &:focus
         background none
-        color gray
-        border 2px solid gray
+        color f-c
+        border 2px solid f-c
     &:active
         transition-duration 0s
         background none
-        color #4d4d4d
-        border 2px solid #4d4d4d
+        color a-c
+        border 2px solid a-c
         .disabled
             box-shadow none
-            
-button-border()
-    box-shadow none
-    transition-property all
-    transition-duration 0.3s
-    background none
-    text-shadow none
 
-.button-pill
-    border-radius 50px
-    
-button-pill()
+.btn-border
+    btn-border()
+
+.btn-pill
     border-radius 50px
 
-.button-circle
-    border-radius 240px
-    box-shadow inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2)
-    width 120px
-    line-height 120px
-    height 120px
-    padding 0px
-    border-width 4px
-    
-button-circle()
+.btn-circle
     border-radius 240px
     box-shadow inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2)
     width 120px
@@ -143,121 +119,92 @@ button-circle()
     padding 0px
     border-width 4px
 
-.button-blue
-    background linear-gradient(to bottom, #39a1f4, #0d8aee)
-    background-color #2196f3
-    border-color #0c7cd5
-    color #fff
-    text-shadow 0 -1px 1px rgba(6, 68, 117, 0.35)
-    &:hover,
+btn-color(bg, bg-c, bd-c, c, ts-c, f-bg-c, f-c, f-bg, a-bg, a-c)
+    background bg
+    background-color bg-c
+    border-color bd-c
+    color c
+    text-shadow 0 -1px 1px ts-c
+    &:hover
     &:focus
-        background-color #2196f3
-        color #fff
-        background linear-gradient(to bottom, #51adf6, #0d8aee)
+        background-color f-bg-c
+        color f-c
+        background f-bg
     &:active
-       background #3893dc
-       color #0960a5
-.button-border-blue
-    button-border()
-    color #2196f3
-    border 2px solid #2196f3
-    &:hover,
-    &:focus
-        background none
-        color #51adf6
-        border 2px solid #51adf6
-    &:active
-        transition-duration 0s
-        background none
-        color #0c7cd5
-        border 2px solid #0c7cd5
-    .disabled
-        box-shadow none
-.button-flat-blue
-    button-flat()
-    background #2196f3
-    color #fff
-    &:hover,
-    &:focus
-        color #fff
-        background #39a1f4
-    &:active
-        transition-duration 0s
-        background #3893dc
-        color #0a6ebd
-    .disabled
-        box-shadow none
-.button-cyan
-    background linear-gradient(to bottom, #00d3ee, #00a5bb)
-    background-color #00bcd4
-    border-color #008fa1
-    color #fff
-    text-shadow 0 -1px 1px rgba(0, 52, 59, 0.35)
-    &:hover,
-    &:focus
-        background-color #00bcd4
-        color #fff
-        background linear-gradient(to bottom, #08e3ff, #00a5bb)
-    &:active
-       background #15acbf
-       color #00626e
-.button-border-cyan
-    button-border()
-    color #00bcd4
-    border 2px solid #00bcd4
-    &:hover,
-    &:focus
-        background none
-        color #08e3ff;
-        border 2px solid #08e3ff
-    &:active
-        transition-duration 0s
-        background none
-        color #008fa1
-        border 2px solid #008fa1
-    .disabled
-        box-shadow none
-.button-flat-cyan
-    button-flat()
-    background #00bcd4
-    color #fff
-    &:hover,
-    &:focus
-        color #fff
-        background #00d3ee
-    &:active
-        transition-duration 0s
-        background #15acbf
-        color #007888
-    .disabled
-        box-shadow none
+       background a-bg
+       color a-c
+
+.btn-blue
+    btn-color linear-gradient(to bottom, #39a1f4, #0d8aee) #2196f3 #0c7cd5 #fff rgba(6, 68, 117, 0.35) #2196f3 #fff linear-gradient(to bottom, #51adf6, #0d8aee) #3893dc #0960a5
+
+.btn-flat-blue
+    btn-flat #2196f3 #fff #39a1f4 #fff #3893dc #0a6ebd
     
-.button-jumbo
+.btn-border-blue
+    btn-border #2196f3 #51adf6 #0c7cd5
+
+.btn-cyan
+    btn-color linear-gradient(to bottom, #00d3ee, #00a5bb) #00bcd4 #008fa1 #fff rgba(0, 52, 59, 0.35) #00bcd4 #fff linear-gradient(to bottom, #08e3ff, #00a5bb) #15acbf #00626e
+
+ .btn-flat-cyan
+    btn-flat #00bcd4 #fff #00d3ee #fff #15acbf #007888
+      
+.btn-border-cyan
+    btn-border #00bcd4 #08e3ff #008fa1
+
+.btn-amber
+    btn-color linear-gradient(to bottom, #ffc721, #ecb100) #ffc107 #d39e00 #fff rgba(109, 82, 0, 0.35) #ffc107 #fff linear-gradient(to bottom, #ffce3a, #ecb100) #e6b520 #a07800
+
+.btn-flat-amber
+    btn-flat #ffc107 #fff #ffc721 #fff #e6b520 #b98b00
+
+.btn-border-amber
+    btn-border #ffc107 #ffce3a #d39e00
+
+.btn-green
+    btn-color linear-gradient(to bottom, #5cb860, #449d48) #4caf50 #3d8b40 #fff rgba(30, 68, 31, 0.35) #4caf50 #fff linear-gradient(to bottom, #6ec071, #449d48) #659667 #2d682f
+
+.btn-flat-green
+    btn-flat #4caf50 #fff #5cb860 #fff #659667 #357a38
+
+.btn-border-green
+    btn-border #4caf50 #6ec071 #3d8b40
+    
+.btn-grey
+    btn-color  linear-gradient(to bottom, #ababab, #919191) #9e9e9e #858585 #fff rgba(82, 82, 82, 0.35) #9e9e9e #fff linear-gradient(to bottom, #b8b8b8, #919191) #9e9e9e #6b6b6b
+
+.btn-flat-grey
+    btn-flat #9e9e9e #fff #ababab #fff #9e9e9e #787878
+
+.btn-border-grey
+    btn-border #9e9e9e #b8b8b8 #858585
+
+.btn-jumbo
     font-size 22px
     height 51.2px
     line-height 51.2px
     padding 0px 40.96px
-.button-large
+.btn-large
     font-size 16px
     height 38.4px
     line-height 38.4px
     padding 0px 30.72px
     input,
-    button
+    btn
         height 40.4px
-.button-small
+.btn-small
     font-size 12px
     height 25.6px
     line-height 24px
     padding 0px 20.48px
     input,
-    button
+    btn
         height 27.6px
-.button-tiny
+.btn-tiny
     font-size 10px
     height 22.4px
     line-height 22.4px
     padding 0px 19.2px
     input,
-    button
+    btn
         height 24.4px
